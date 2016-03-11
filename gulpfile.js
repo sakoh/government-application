@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     jade = require('gulp-jade'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    webserver = require('gulp-webserver')
 
 gulp.task('jade', function() {
     gulp.src('./templates/index.jade')
@@ -14,7 +15,17 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('build'))
 })
 
+gulp.task('webserver', function() {
+  gulp.src('./build')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: false,
+      open: true
+    }))
+})
+
+
 gulp.watch('./templates/**/*.jade', ['jade'])
 gulp.watch('./sass/**/*.scss', ['sass'])
 
-gulp.task('default', ['jade', 'sass'])
+gulp.task('default', ['jade', 'sass', 'webserver'])
