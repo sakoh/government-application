@@ -1,0 +1,9 @@
+property_fields:
+  - "assessor's parcel number"
+  - "property address"
+  - "city"
+  - "date of purchase or transfer"
+  - "recorder's document number"
+  - "probate number (if applicable)"
+  - "date of death (if applicable)"
+  - "date of decree of distribution (if applicable)"
