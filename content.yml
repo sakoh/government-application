@@ -20,7 +20,7 @@ B:
       stepparent on the date of purchase or transfer?
     type: "multiple choice"
     options: ["yes", "no"]
-  - title: > If no, was the marriage or registered domestic partnership terminated by:
+  - title: "If no, was the marriage or registered domestic partnership terminated by:"
     type: "multiple choice"
     options: ["death", "divorce/termination of partnership"]
   - title: >
@@ -38,3 +38,10 @@ B:
       registered domestic partnership as of the date of purchase or transfer?
     type: "multiple choice"
     options: ["yes", "no"]
+  - title: >
+      I certify (or declare) under penalty of perjury under the laws of the State of California that the
+      foregoing and all information hereon, including any accompanying statements or documents, is true
+      and correct to the best of my knowledge and that I am the parent or child (or transferee’s legal
+      representative) of the transferors listed in Section B; and that all of the transferees are eligible
+      transferees within the meaning of section 63.1 of the Revenue and Taxation Code.
+    type: "checkbox"
