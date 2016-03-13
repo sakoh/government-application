@@ -1,4 +1,4 @@
-property:
+A:
   - "assessor's parcel number"
   - "property address"
   - "city"
@@ -7,3 +7,34 @@ property:
   - "probate number (if applicable)"
   - "date of death (if applicable)"
   - "date of decree of distribution (if applicable)"
+B:
+  - title: "print full name(s) of transferee(s)"
+    type: "input"
+  - title: "Family relationship(s) to transferor(s)"
+    type: "input"
+  - title: "If adopted, age at time of adoption"
+    type: "input"
+  - title: >
+      If stepparent/stepchild relationship is involved, was parent still married to or in a registered
+      domestic partnership (registered means registered with the California Secretary of State) with
+      stepparent on the date of purchase or transfer?
+    type: "multiple choice"
+    options: ["yes", "no"]
+  - title: > If no, was the marriage or registered domestic partnership terminated by:
+    type: "multiple choice"
+    options: ["death", "divorce/termination of partnership"]
+  - title: >
+      If terminated by death, had the surviving stepparent remarried or entered into a registered domestic
+      partnership as of the date of purchase or transfer?
+    type: "multiple choice"
+    options: ["yes", "no"]
+  - title: >
+      If in-law relationship is involved, was the son-in-law or daughter-in-law still married to or in a
+      registered domestic partnership with the daughter or son on the date of purchase or transfer?
+    type: "multiple choice"
+    options: ["yes", "no"]
+  - title: >
+      If terminated by death, had the surviving son-in-law or daughter-in-law remarried or entered into a
+      registered domestic partnership as of the date of purchase or transfer?
+    type: "multiple choice"
+    options: ["yes", "no"]
