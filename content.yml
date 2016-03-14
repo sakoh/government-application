@@ -1,51 +1,75 @@
 A:
   - title: "assessor's parcel number"
     class: "parcel-number"
+
   - title: "property address"
     class: "property-address"
+
   - title: "city"
     class: "city"
+
   - title: "date of purchase or transfer"
     class: "purchase-transfer-date"
+
   - title: "recorder's document number"
     class: "document-number"
+
   - title: "probate number (if applicable)"
     class: "probate-number"
+
   - title: "date of death (if applicable)"
     class: "death-date"
+
   - title: "date of decree of distribution (if applicable)"
     class: "distribution-decree-date"
+
 B:
   - title: "print full name(s) of transferee(s)"
+    class: "transferee"
     type: "input"
+
   - title: "Family relationship(s) to transferor(s)"
+    class: "family-relationship"
     type: "input"
+
   - title: "If adopted, age at time of adoption"
+    class: "adoption-age"
     type: "input"
+
   - title: >
       If stepparent/stepchild relationship is involved, was parent still married to or in a registered
       domestic partnership (registered means registered with the California Secretary of State) with
       stepparent on the date of purchase or transfer?
+    class: "stepparent-stepchild-relationship"
     type: "multiple choice"
     options: ["yes", "no"]
+
   - title: "If no, was the marriage or registered domestic partnership terminated by:"
+    class: "marriage-termination"
     type: "multiple choice"
     options: ["death", "divorce/termination of partnership"]
+
   - title: >
       If terminated by death, had the surviving stepparent remarried or entered into a registered domestic
       partnership as of the date of purchase or transfer?
+    class: "remarried-or-domestic-relationship"
     type: "multiple choice"
     options: ["yes", "no"]
+
   - title: >
       If in-law relationship is involved, was the son-in-law or daughter-in-law still married to or in a
       registered domestic partnership with the daughter or son on the date of purchase or transfer?
+    class: "in-law-relationship"
     type: "multiple choice"
     options: ["yes", "no"]
+
   - title: >
       If terminated by death, had the surviving son-in-law or daughter-in-law remarried or entered into a
       registered domestic partnership as of the date of purchase or transfer?
+    class: "surviving-child-in-law"
     type: "multiple choice"
     options: ["yes", "no"]
+
 C:
   - title: >
       I certify (or declare) under penalty of perjury under the laws of the State of California that the
@@ -53,5 +77,5 @@ C:
       and correct to the best of my knowledge and that I am the parent or child (or transferee’s legal
       representative) of the transferors listed in Section B; and that all of the transferees are eligible
       transferees within the meaning of section 63.1 of the Revenue and Taxation Code.
+    class: "agreement"
     type: "checkbox"
-  - title:
