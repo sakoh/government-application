@@ -1,12 +1,20 @@
 A:
-  - "assessor's parcel number"
-  - "property address"
-  - "city"
-  - "date of purchase or transfer"
-  - "recorder's document number"
-  - "probate number (if applicable)"
-  - "date of death (if applicable)"
-  - "date of decree of distribution (if applicable)"
+  - title: "assessor's parcel number"
+    class: "parcel-number"
+  - title: "property address"
+    class: "property-address"
+  - title: "city"
+    class: "city"
+  - title: "date of purchase or transfer"
+    class: "purchase-transfer-date"
+  - title: "recorder's document number"
+    class: "document-number"
+  - title: "probate number (if applicable)"
+    class: "probate-number"
+  - title: "date of death (if applicable)"
+    class: "death-date"
+  - title: "date of decree of distribution (if applicable)"
+    class: "distribution-decree-date"
 B:
   - title: "print full name(s) of transferee(s)"
     type: "input"
@@ -38,6 +46,7 @@ B:
       registered domestic partnership as of the date of purchase or transfer?
     type: "multiple choice"
     options: ["yes", "no"]
+C:
   - title: >
       I certify (or declare) under penalty of perjury under the laws of the State of California that the
       foregoing and all information hereon, including any accompanying statements or documents, is true
@@ -45,3 +54,4 @@ B:
       representative) of the transferors listed in Section B; and that all of the transferees are eligible
       transferees within the meaning of section 63.1 of the Revenue and Taxation Code.
     type: "checkbox"
+  - title:

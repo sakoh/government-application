@@ -8,8 +8,14 @@ fieldset
   .form-bottom
     each field in A
       .form-group.input-group-lg
-        label.sr-only #{field}
-        input.form-control(type='text', placeholder='#{field}')
+        label.sr-only(for="form-#{field.class}") #{field.title}
+        input(
+          type='text', 
+          id="form-#{field.class}", 
+          name='form-#{field.class}', 
+          placeholder='#{field.title}', 
+          class="form-#{field.class} form-control"
+        )
     .closer
       :markdown
         **The disclosure of social security numbers is mandatory as required by Revenue and Taxation Code section 63.1.** 
