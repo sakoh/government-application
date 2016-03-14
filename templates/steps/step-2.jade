@@ -1,10 +1,7 @@
 fieldset
   .form-top
-    .form-top-left
-      h3 Step 2 / 3
-      p Set up your account:
-    .form-top-right
-      i.fa.fa-key
+    h3 Step 2 / 3 TRANSFEREE(S)/BUYER(S)
+    p Fill out the following information about the transferees and buyers
   .form-bottom
     
     each field in B
@@ -20,11 +17,19 @@ fieldset
           )
       if(field.type == "multi-choice")
         .form-group
-          label #{field.title}
+          p #{field.title}
           each option in field.options
-            input(type="radio", name="#{field.class}", value="#{option}")
+            input(type="radio", name="#{field.class}", value="#{option}", placeholder="#{option}")
             #{option}
             br
+            
+    .closer
+      :markdown
+        **ALLOCATION OF EXCLUSION** 
+        (If the full cash value of the real property transferred exceeds the one million dollar value exclusion, 
+          thetransferee must specify on an attachment to this claim the amount and allocation of the exclusion 
+          that is being sought.)
     
-    button.btn.btn-previous(type='button') Previous
-    button.btn.btn-next(type='button') Next
+    button.btn.btn-previous.pull-left(type='button') Previous
+    
+    button.btn.btn-next.pull-right(type='button') Next
