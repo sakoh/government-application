@@ -42,33 +42,43 @@ B:
       stepparent on the date of purchase or transfer?
     class: "stepparent-stepchild-relationship"
     type: "multi-choice"
-    options: ["yes", "no"]
+    options:
+      - "yes"
+      - "no"
 
   - title: "If no, was the marriage or registered domestic partnership terminated by:"
     class: "marriage-termination"
-    type: "multiple choice"
-    options: ["death", "divorce/termination of partnership"]
+    type: "multi-choice"
+    options:
+      - "death"
+      - "divorce/termination of partnership"
 
   - title: >
       If terminated by death, had the surviving stepparent remarried or entered into a registered domestic
       partnership as of the date of purchase or transfer?
     class: "remarried-or-domestic-relationship"
     type: "multi-choice"
-    options: ["yes", "no"]
+    options:
+      - "yes"
+      - "no"
 
   - title: >
       If in-law relationship is involved, was the son-in-law or daughter-in-law still married to or in a
       registered domestic partnership with the daughter or son on the date of purchase or transfer?
     class: "in-law-relationship"
-    type: "multiple choice"
-    options: ["yes", "no"]
+    type: "multi-choice"
+    options:
+      - "yes"
+      - "no"
 
   - title: >
       If terminated by death, had the surviving son-in-law or daughter-in-law remarried or entered into a
       registered domestic partnership as of the date of purchase or transfer?
     class: "surviving-child-in-law"
     type: "multi-choice"
-    options: ["yes", "no"]
+    options:
+      - "yes"
+      - "no"
 
 C:
   - title: >
