@@ -41,7 +41,7 @@ B:
       domestic partnership (registered means registered with the California Secretary of State) with
       stepparent on the date of purchase or transfer?
     class: "stepparent-stepchild-relationship"
-    type: "multiple choice"
+    type: "multi-choice"
     options: ["yes", "no"]
 
   - title: "If no, was the marriage or registered domestic partnership terminated by:"
@@ -53,7 +53,7 @@ B:
       If terminated by death, had the surviving stepparent remarried or entered into a registered domestic
       partnership as of the date of purchase or transfer?
     class: "remarried-or-domestic-relationship"
-    type: "multiple choice"
+    type: "multi-choice"
     options: ["yes", "no"]
 
   - title: >
@@ -67,7 +67,7 @@ B:
       If terminated by death, had the surviving son-in-law or daughter-in-law remarried or entered into a
       registered domestic partnership as of the date of purchase or transfer?
     class: "surviving-child-in-law"
-    type: "multiple choice"
+    type: "multi-choice"
     options: ["yes", "no"]
 
 C:

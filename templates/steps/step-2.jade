@@ -6,14 +6,25 @@ fieldset
     .form-top-right
       i.fa.fa-key
   .form-bottom
-    .form-group
-      label.sr-only(for='form-email') Email
-      input#form-email.form-email.form-control(type='text', name='form-email', placeholder='Email...')
-    .form-group
-      label.sr-only(for='form-password') Password
-      input#form-password.form-password.form-control(type='password', name='form-password', placeholder='Password...')
-    .form-group
-      label.sr-only(for='form-repeat-password') Repeat password
-      input#form-repeat-password.form-repeat-password.form-control(type='password', name='form-repeat-password', placeholder='Repeat password...')
+    
+    each field in B
+      if(field.type == "input")
+        .form-group.input-group-lg
+          label.sr-only(for="form-#{field.class}") #{field.title}
+          input(
+            type='text', 
+            id="form-#{field.class}", 
+            name='form-#{field.class}', 
+            placeholder='#{field.title}', 
+            class="form-#{field.class} form-control"
+          )
+      if(field.type == "multi-choice")
+        .form-group
+          label #{field.title}
+          each option in field.options
+            input(type="radio", name="#{field.class}", value="#{option}")
+            #{option}
+            br
+    
     button.btn.btn-previous(type='button') Previous
     button.btn.btn-next(type='button') Next
