@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     yaml = require('js-yaml'),
     fs = require('fs')
 
-gulp.task('jade', function() {
+gulp.task('jade', () => {
     var content = yaml.safeLoad(fs.readFileSync('./content.yml', 'utf8'));
 
     gulp.src('./templates/index.jade')
@@ -18,7 +18,7 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('build/assets'))
 })
 
-gulp.task('webserver', function() {
+gulp.task('webserver', () => {
   gulp.src('./build')
     .pipe(webserver({
       livereload: true,
