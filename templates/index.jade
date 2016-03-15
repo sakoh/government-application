@@ -1,22 +1,22 @@
 extends _layout
 block main
-  include partials/navigation
-  .top-content
-    .inner-bg
-      .container
-        .row
-          .col-sm-8.col-sm-offset-2.text
-            :markdown
-              # **Bootstrap** Multi-Step Registration Form
-            .description
-              :markdown
-                This is a free responsive multi-step registration form made with Bootstrap.
+    include partials/navigation
+    .top-content
+        .inner-bg
+            .container
+                .row
+                    .col-sm-12.text
+                        :marked
+                            # **Bootstrap** Multi-Step Registration Form
+                        .description
+                            :marked
+                                This is a free responsive multi-step registration form made with Bootstrap.
+                                
+                                Download it at **[AZMIND](http://azmind.com)**, custmize it and use it as you like
                 
-                Download it at **[AZMIND](http://azmind.com)**, custmize it and use it as you like
-                
-            .row
-              .col-sm-12.form-box
-                form.registration-form(role='form', action='', method='post')
-                  include steps/step-1.jade
-                  include steps/step-2.jade
-                  include steps/step-3.jade
+                .row
+                    .col-sm-12.form-box
+                        form.registration-form(role='form', action='', method='post')
+                            include steps/step-1.jade
+                            include steps/step-2.jade
+                            include steps/step-3.jade
