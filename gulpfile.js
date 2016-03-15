@@ -28,7 +28,7 @@ gulp.task('webserver', function() {
 })
 
 
-gulp.watch('./templates/**/*.jade', ['jade'])
+gulp.watch(['./templates/**/*.jade','./content.yml'], ['jade'])
 // gulp.watch('./sass/**/*.scss', ['sass'])
 
 gulp.task('default', ['jade', 'webserver'])
