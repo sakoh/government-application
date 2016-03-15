@@ -15,7 +15,7 @@ gulp.task('jade', () => {
                 locals: content
             })
         )
-        .pipe(gulp.dest('build')
+        .pipe(gulp.dest('build'))
 
     gulp.src('./assets/**/*/**/*')
         .pipe(gulp.dest('build/assets'))
