@@ -5,6 +5,7 @@ fieldset
   .form-bottom
     
     each field in B
+    
       if(field.type == "input")
         .form-group.input-group-lg
           label.sr-only(for="form-#{field.class}") #{field.title}
@@ -15,6 +16,7 @@ fieldset
             placeholder='#{field.title}', 
             class="form-#{field.class} form-control"
           )
+          
       if(field.type == "multi-choice")
         .form-group
           p #{field.title}
@@ -22,9 +24,6 @@ fieldset
             each option in field.options
               option(value="#{option}") #{option}
             option(selected) choose one
-            //- input(type="radio", name="#{field.class}", value="#{option}", placeholder="#{option}")
-            //- #{option}
-            //- br
             
     .closer
       :marked
