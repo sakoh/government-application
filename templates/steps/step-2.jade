@@ -1,11 +1,10 @@
 fieldset
     .form-top
-        h3 Step 2 / 3 Transferees & Buyers
+        h3 Step 2 / 4 Transferees & Buyers
         p Fill out the following information about the transferees and buyers
     .form-bottom
-    
         each field in B
-    
+        
             if(field.type == "input")
                 .form-group.input-group-lg
                     label.sr-only(for="form-#{field.class}") #{field.title}
@@ -16,7 +15,7 @@ fieldset
                         placeholder='#{field.title}', 
                         class="form-#{field.class} form-control"
                     )
-          
+                    
             if(field.type == "multi-choice")
                 .form-group
                     p #{field.title}
@@ -24,15 +23,13 @@ fieldset
                         each option in field.options
                             option(value="#{option}") #{option}
                         option(selected) choose one
-            
+                        
         .closer
             :marked
                 **ALLOCATION OF EXCLUSION** 
-                
                 If the full cash value of the real property transferred exceeds the one million dollar value exclusion, 
                 thetransferee must specify on an attachment to this claim the amount and allocation of the exclusion 
                 that is being sought.
-    
+                
             button.btn.btn-previous.pull-left(type='button') Previous
-    
             button.btn.btn-next.pull-right(type='button') Next
