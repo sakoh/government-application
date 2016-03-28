@@ -12,7 +12,8 @@ gulp.task('jade', () => {
     gulp.src('./templates/index.jade')
         .pipe(
             jade({
-                locals: content
+                locals: content,
+                pretty: true
             })
         )
         .pipe(gulp.dest('build'))
